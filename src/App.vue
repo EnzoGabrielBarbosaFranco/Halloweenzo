@@ -1,26 +1,19 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import Cabecalho from './components/Cabecalho.vue';
+import Home from './components/Home.vue';
+import Categorias from './components/Categorias.vue';
+import DocesOuTravessuras from './components/DocesOuTravessuras.vue';
+import SeInscreva from './components/SeInscreva.vue';
+import Rodape from './components/Rodape.vue';
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<template>
+  <div class="container overflow-x-hidden">
+    <Cabecalho/>
+    <Home/>
+    <Categorias/>
+    <DocesOuTravessuras/>
+    <SeInscreva/>
+    <Rodape/>
+  </div>
+</template>
